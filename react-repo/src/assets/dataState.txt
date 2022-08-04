@@ -1,0 +1,109 @@
+//------------------------Covid-----------------------------//
+// countries: [
+        //     { id: "CU001", name: "INDIA" },
+        //     { id: "CU002", name: "CHINA" },
+        //     { id: "CU003", name: "JAPAN" }
+        // ],
+        // cases: [
+        //     { id: 'C001', country: 'CU001', infected: '7712', critical: '612', recovered: '955', death: '4424', date: '25 July 2020' },
+        //     { id: 'C002', country: 'CU002', infected: '9112', critical: '512', recovered: '1112', death: '2124', date: '25 July 2020' },
+        //     { id: 'C003', country: 'CU003', infected: '5112', critical: '712', recovered: '1312', death: '224', date: '25 July 2020' }
+        // ],
+        // news: [
+        //     { id: 'N001', country: 'CU001', content: 'India to produce covid-19 vaccine' },
+        //     { id: 'N002', country: 'CU002', content: 'China to produce covid-19 vaccine' },
+        //     { id: 'N003', country: 'CU003', content: 'Japan to produce covid-19 vaccine' }
+        // ],
+        // data: [
+        //     { country: 'CU001', 
+        //       death: [2223, 2341, 3214, 3256, 3782, 4135, 5],
+        //       recovered: [545, 653, 714, 856, 882, 915, 955],
+        //       infected: [7645, 7653, 6214, 7256, 7382, 7515, 7712],
+        //       critical: [432, 553, 521, 525, 632, 601, 612]
+        //     },
+        //     { country: 'CU002', 
+        //       death: [223, 341, 414, 456, 782, 1135, 2124],
+        //       recovered: [455, 653, 694, 756, 882, 915, 1112],
+        //       infected: [6345, 6653, 6714, 7256, 7382, 8215, 9112],
+        //       critical: [432, 653, 521, 825, 732, 231, 512]
+        //     },
+        //     { country: 'CU003', 
+        //       death: [23, 41, 44, 56, 82, 135, 224],
+        //       recovered: [345, 653, 687, 756, 882, 1215, 1312],
+        //       infected: [3450, 3653, 4214, 4256, 4382, 4415, 5112],
+        //       critical: [232, 253, 321, 425, 732, 721, 712]
+        //     }
+        // ],
+//-----------------------blog-----------------------//
+// blogs: [ 
+// { id: 'B001', title: 'HTML', content: 'lorem ipsum', date: '7 Dec 2018', author: 'Steve Balmer', category: 'C001' }, 
+// { id: 'B002', title: 'SCRUM', content: 'lorem ipsum', date: '3 Nov 2018', author: 'Bill Gates', category: 'C002' }, 
+// { id: 'B003', title: 'Agile', content: 'lorem ipsum', date: '2 Sep 2018', author: 'Mark Zukerberg', category: 'C002' } 
+// ], 
+// categories: [ 
+// { id: 'C001', name: 'Information Technology' }, 
+// { id: 'C002', name: 'Management' }, 
+// { id: 'C003', name: 'Food' } 
+// ], 
+// comments: [ 
+// { id: 'CN001', userName: 'Jack', comment: 'Impressive!', blog: 'B001' }, 
+// { id: 'CN002', userName: 'Jill', comment: 'This blog is great', blog: 'B001' }, 
+// { id: 'CN003', userName: 'Tom', comment: 'This blog is great', blog: 'B002' } 
+// ]
+
+//------------------------project--------------------//
+// details: [
+      //   { id: 'PJ001', name: 'IT Project', cost: 'AED 20000', schedule: '2 years', description: 'about it project', startDate: '5 June 2018', endDate: '5 June 2020' },
+      //   { id: 'PJ002', name: 'ERP Project', cost: 'AED 30000', schedule: '3 months', description: 'about it project2', startDate: '3 Nov 2018', endDate: '3 Feb 2019' },
+      //   { id: 'PJ003', name: 'ATM Project', cost: 'AED 25000', schedule: '1 year', description: 'about it project3', startDate: '2 Sep 2018', endDate: '2 Sep 2019' }
+      // ],
+      // projects: [
+      //   { id: 'PJ001', name: 'IT Project' },
+      //   { id: 'PJ002', name: 'ERP Project'},
+      //   { id: 'PJ003', name: 'ATM Project'}
+      // ],
+      // data: [
+      //   { id: 'PJ001', 
+      //     actualCost: [148, 356, 414, 556, 695, 735, 999],
+      //     excpectedCost: [143, 361, 409, 571, 690, 730, 994],
+      //     actualSchedule: [7, 8, 9, 10, 6, 4, 7],
+      //     excpectedSchedule: [3, 4, 5, 6, 3, 6, 4]
+      //   },
+      //   { id: 'PJ002', 
+      //     actualCost: [123, 341, 334, 556, 680, 735, 945],
+      //     excpectedCost: [128, 336, 329, 556, 685, 740, 940],
+      //     actualSchedule: [7, 8, 9, 10, 11, 12, 10], 
+      //     excpectedSchedule: [2, 3, 2, 3, 5, 6, 4]
+      //   },
+      //   { id: 'PJ003', 
+      //     actualCost: [158, 541, 414, 556, 682, 535, 623],
+      //     excpectedCost: [153, 536, 409, 551, 677, 530, 612] ,
+      //     actualSchedule: [12, 15, 19, 15, 17, 15, 18],
+      //     excpectedSchedule: [5, 8, 9, 7, 10, 10, 10] 
+      //   }
+      // ]
+
+//------------------------services----------------------//
+ // services: [
+        //     { id: 'S001', name: 'Help Desk Services', details: 'Help Desk Services.', category: 'C001' },
+        //     { id: 'S002', name: 'IT Support Services', details: 'IT Support services.', category: 'C002'  },
+        //     { id: 'S003', name: 'Data Center Services', details: 'Data Center services.', category: 'C003' }
+        // ],
+        // categories: [
+        //     { id: 'C001', name: 'Support' },
+        //     { id: 'C002', name: 'Information Technology' },
+        //     { id: 'C003', name: 'Management' } 
+        // ]
+//------------------------product----------------------//
+  // products: [
+        //   { id:'P001', name: 'Dell', price: '40000', details: 'Dell', category: 'PRC001', summary: 'Dell is an American multinational computer technology company that develops, sells, repairs, and supports computers and related products and services.Dell is an MNC' },
+        //   { id:'P002', name: 'Printer', price: '25000', details: 'Epson', category: 'PRC001', summary: 'Printer Vendor' },
+        //   { id:'P003', name: 'Laptop', price: '25000', details: 'Lenovo', category: 'PRC002', summary: 'Laptop Vendor' },
+        //   { id:'P004', name: 'Laptop', price: '25000', details: 'Lenovo', category: 'PRC002', summary: 'Laptop Vendor' },
+        //   { id:'P005', name: 'Laptop', price: '25000', details: 'Lenovo', category: 'PRC002', summary: 'Laptop Vendor' },
+        // ],
+        // Category: [
+        //     { id: 'PRC001', name: 'Computer' },
+        //     { id: 'PRC002', name: 'Beauty' },
+        //     { id: 'PRC003', name: 'Food' }
+        // ]

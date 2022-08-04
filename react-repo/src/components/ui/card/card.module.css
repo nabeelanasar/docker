@@ -1,0 +1,29 @@
+/*
+* Card.tsx.
+*
+* @author Viji
+* @version 1.0.0
+*/
+
+.blog {
+    margin-bottom: 10px;
+    padding: 0 0 40px 0;
+    text-align: justify; 
+}
+
+.cardHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.commentBox {
+    padding: 20PX;
+}
+
+.card{
+    margin-top: 25px;
+}
+
+.more{
+    text-align: right !important;
+}

@@ -1,0 +1,15 @@
+FROM node:10 as dev1
+
+
+FROM node:12.18-alpine as dev2
+# RUN apt-get update
+# WORKDIR /app/
+CMD ["bash"]
+
+
+FROM node:12.18-alpine as prod
+WORKDIR /work/
+COPY ./package.json /work/package.json
+RUN npm install
+COPY ./build/ /work/build/
+CMD ["node", "./build/server.js"]

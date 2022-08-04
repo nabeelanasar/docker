@@ -1,0 +1,84 @@
+{
+  "name": "first-node-feathers",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "FREELEARN",
+    "email": "biju.official@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run compile && npm run jest",
+    "dev": "ts-node-dev --no-notify src/",
+    "start": "npm run compile && node lib/",
+    "jest": "jest  --forceExit",
+    "compile": "shx rm -rf lib/ && tsc"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": []
+  },
+  "types": "lib/",
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.8",
+    "@feathersjs/authentication-local": "^4.5.8",
+    "@feathersjs/authentication-oauth": "^4.5.8",
+    "@feathersjs/configuration": "^4.5.8",
+    "@feathersjs/errors": "^4.5.8",
+    "@feathersjs/express": "^4.5.8",
+    "@feathersjs/feathers": "^4.5.8",
+    "@feathersjs/socketio": "^4.5.8",
+    "@feathersjs/transport-commons": "^4.5.8",
+    "@types/ms": "^0.7.31",
+    "@types/sequelize": "^4.28.9",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "feathers-hooks-common": "^5.0.4",
+    "feathers-sequelize": "^6.2.0",
+    "feathers-versionate": "^0.2.2",
+    "helmet": "^3.23.3",
+    "ms": "^2.1.2",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.32",
+    "@types/compression": "^1.7.0",
+    "@types/cors": "^2.8.7",
+    "@types/helmet": "0.0.48",
+    "@types/jest": "^26.0.13",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/serve-favicon": "^2.5.0",
+    "@types/validator": "^10.11.3",
+    "axios": "^0.20.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "shx": "^0.3.2",
+    "ts-jest": "^26.3.0",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "tslint": "^6.1.3",
+    "typescript": "^3.9.7"
+  }
+}

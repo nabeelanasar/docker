@@ -1,0 +1,77 @@
+version: '3.4'
+
+services:
+  # nodecicd: #docker run -it -v ${PWD}src:/work/src -p 8002:8000 freelearn/nodejs:1.0.0
+  #   container_name: nodecicd
+  #   image: freelearn/nodecicd:1.0.0
+  #   build:
+  #     context: ./node-cicd-repo
+  #     dockerfile: dockerfile
+  #     target: dev
+  #   # command: nodemon --inspect=0.0.0.0 ./src/server.js
+  #   volumes:
+  #     - ./node-cicd-repo/src/:/work/src/
+  #   ports:
+  #     - 8001:8000
+  #     - 9001:9229     #debug port
+  # postgres_nodeexpress:
+  #   container_name: postgres_nodeexpress
+  #   image: postgres_nodeexpress:1.0.0
+  #   build:
+  #     context: ./postgres
+  #     dockerfile: dockerfile
+  #     args:
+  #       FILE: setup.sql
+  #       DBNAME: node_express_3
+  #     target: dev
+  #   environment:
+  #     # - POSTGRES_DB=node_express_3
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=admin
+  #   ports:
+  #     - 5442:5432
+  #   networks:
+  #     - freelearn_network
+  #   volumes:
+  #     - db-data:/var/lib/postgresql/data
+  # pgadmin4:
+  #   container_name: pgadmin4
+  #   image: dpage/pgadmin4
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=freelearn@gmail.com
+  #     - PGADMIN_DEFAULT_PASSWORD=123456
+  #   ports:
+  #     - 8003:80
+  #   networks:
+  #     - freelearn_network
+  #   depends_on:
+  #     - postgres_nodeexpress
+  nodeexpress:
+    container_name: nodeexpress
+    image: nodeexpress:1.0.0
+    build:
+      context: ./node-express-repo
+      dockerfile: dockerfile
+      target: dev2
+    # links:
+    #   - postgres_nodeexpress
+    environment:
+      - PGNAME=postgres
+      - PGPASS=admin
+      - PGPORT=5432
+      - DATABASE_URL=postgres://postgres:admin@postgres_nodeexpress:5432/node_express_3
+    # volumes:
+    #   - ./node-express-repo/:/app/
+      # - ./node-express-repo/src/:/work/src/
+    ports:            #publish ports
+      - 3030:3030
+      - 9002:9229     #debug port
+    networks:
+      - freelearn_network
+    # depends_on:
+    #   - postgres_nodeexpress
+networks:
+  freelearn_network:
+    driver: bridge
+volumes:
+  db-data:

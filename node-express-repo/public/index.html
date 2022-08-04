@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>API Endpoints</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="API Endpoints">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/css/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <div class="table100">
+
+                    <table>
+                        <thead>
+                            <tr class="table100-head">
+                                <th class="column5">API</th>
+								<th class="column4">Version</th>
+                                <th class="column2">Method Supported</th>
+                                <th class="column1">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Blogs</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/blogs</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, POST</td>
+                                <td class="column1">Retreive/Create all blogs. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/blogs/id</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, PATCH, PUT, DELETE</td>
+                                <td class="column1">Retreive/Update/Delete a blog with specific Id</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/blogs?q=categories</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET</td>
+                                <td class="column1">Retreive all blog categories. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/blogs?q=comments</td>
+                                <td class="column4">1</td>
+                                <td class="column2">POST</td>
+                                <td class="column1">Post comments.</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Covid</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/covid</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, POST</td>
+                                <td class="column1">Retreive/Create all covid cases. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">covid/id</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, PATCH, PUT, DELETE</td>
+                                <td class="column1">Retreive/Update/Delete a covid case with specific Id</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/covid?q=countries</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET</td>
+                                <td class="column1">Retreive all covid countries. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/covid?q=news</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET</td>
+                                <td class="column1">Retreive all covid news. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Projects</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/projects</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, POST</td>
+                                <td class="column1">Retreive/Create all project details. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/projects/id</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, PATCH, PUT, DELETE</td>
+                                <td class="column1">Retreive/Update/Delete a project detail with specific Id</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/projects?q=data</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET</td>
+                                <td class="column1">Retreive all data. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Products</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/products</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, POST</td>
+                                <td class="column1">Retreive/Create all products. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/products/id</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, PATCH, PUT, DELETE</td>
+                                <td class="column1">Retreive/Update/Delete a product with specific Id</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/products?q=categories</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET</td>
+                                <td class="column1">Retreive all product categories. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Services</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/services</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, POST</td>
+                                <td class="column1">Retreive/Create all services. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/services/id</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET, PATCH, PUT, DELETE</td>
+                                <td class="column1">Retreive/Update/Delete a service with specific Id</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/services?q=categories</td>
+                                <td class="column4">1</td>
+                                <td class="column2">GET</td>
+                                <td class="column1">Retreive all service categories. Supports <i>$select, $sort, $limit, $skip</i></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Users</strong></td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5">/users</td>
+                                <td class="column4">NA</td>
+                                <td class="column2">POST</td>
+                                <td class="column1">
+                                    Register a user.<br/>
+                                    Use <i>{ "email": "your_email", "password": "your_password" }</i> to register.</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="column5">/users/:id</td>
+                                <td class="column4">NA</td>
+                                <td class="column2">GET, PATCH, PUT, DELETE</td>
+                                <td class="column1">Retreive/Update/Delete an user with specific Id</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column5" colspan="4"><strong>Authentication</strong></td>
+                                <tr>
+                                    <td class="column5">/authentication</td>
+                                    <td class="column4">NA</td>
+                                    <td class="column2">POST</td>
+                                    <td class="column1">
+                                        Gives Jwt token if user successfully authentiated.<br/>
+                                        Use <i>{ "strategy": "local", "email": "your_email", "password": "your_password" }</i> to get token.</td>
+                                </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

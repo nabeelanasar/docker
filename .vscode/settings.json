@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "[Noctis Minimus]": {
+            "titleBar.activeBackground": "#457b9d",
+            "titleBar.activeForeground": "#212d40",
+            "titleBar.inactiveBackground": "#6399BB",
+            "titleBar.inactiveForeground": "#212d40",
+            "tab.activeBorder": "#ff0000",
+            "tab.activeBackground": "#212d40"
+        }
+    }
+}

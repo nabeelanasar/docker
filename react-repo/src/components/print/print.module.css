@@ -1,0 +1,22 @@
+/*
+*Print.
+*
+* @author Vineetha
+* @version 1.0.1
+*/
+
+.print {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #ccc;
+    padding: 16px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .print {
+        width: 200px;
+    }
+}

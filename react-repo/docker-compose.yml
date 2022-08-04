@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  reactredux:
+    container_name: reactredux
+    image: reactredux:1.0.0
+    build:
+      context: .
+      dockerfile: dockerfile
+      target: dev
+    ports:
+      - 3000:3000
+      - 9001:9229     #debug port
+      - 35729:35729   #websocket port for hot reloading

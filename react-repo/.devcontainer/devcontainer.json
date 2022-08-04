@@ -1,0 +1,55 @@
+// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
+{
+	"name": "React VS Code Container",
+
+	// Sets the run context to one level up instead of the .devcontainer folder.
+	"context": "..",
+
+	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+	"dockerFile": "..\\dockerfile",
+
+	"build": { 
+		"target": "dev1"
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"workbench.colorTheme":"Noctis Minimus",
+		"workbench.colorCustomizations": {
+			"[Noctis Minimus]": {
+				"titleBar.activeBackground": "#b75d69",
+				"titleBar.activeForeground": "#1a1423",
+				"titleBar.inactiveBackground": "#D5A3A9",
+				"titleBar.inactiveForeground": "#1a1423",
+				"tab.activeBorder": "#ff0000",
+				"tab.activeBackground": "#212d40"
+			}
+		},
+		"terminal.integrated.shell.linux": null
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"esbenp.prettier-vscode",
+		"dsznajder.es7-react-js-snippets"
+	],
+
+	// Publish the ports
+	"appPort": [3000, "9001:9229", 35729],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [3000, 9229, 35729],
+
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	// "runServices": [],
+
+	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	// "shutdownAction": "none",
+
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	"postCreateCommand": "npm install"
+
+	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}

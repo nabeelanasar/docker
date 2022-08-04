@@ -1,0 +1,15 @@
+/*
+ * navbar.module.css.
+ * 
+ * @author Vishnu
+ * @version 1.0.0
+ */
+ 
+  .myActive{
+     color:rgb(238, 143, 143) !important;
+     text-decoration-line: underline !important;
+ }
+
+ .default{
+     color: rgba(255,255,255,.5);
+ }

@@ -1,0 +1,16 @@
+/*
+* blogPage.module.css
+*
+* @author Anisha
+* @version 1.0.0
+*/
+
+.blogBuilder {
+    margin: 0px 0px;
+    padding: 16px;
+}
+
+.breadcrumb ol { 
+    background-color: #fff !important; 
+    padding-top:20px;  
+}

@@ -1,0 +1,14 @@
+/*
+* CSS File product.module.css
+*
+* @author Vineetha Vijayan
+* @version 1.0.1
+*/
+
+.product {
+     color: black;
+}
+
+.img-responsive{
+     width: 100%;
+}

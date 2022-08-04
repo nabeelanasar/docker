@@ -1,0 +1,41 @@
+/*
+* list.css.
+*
+* @author Anusree Mohan
+* @version 1.0.0
+*/
+
+.list {
+    padding: 0 0 20px 0;
+    text-align: left;
+}
+
+.listFont{
+    font-weight: bold;
+}
+
+.covid {
+    text-align: justify;
+}
+
+.covidText {
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.txtFont {
+    text-transform: capitalize;
+    text-align:left;
+    display: block;
+    font-size: 1rem;
+    color: black;
+}
+
+.lastUpdated {
+    margin: 10px 0px 0px 20px;
+    font-size: small;
+    color: gray;
+    text-align: right;
+}

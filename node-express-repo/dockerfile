@@ -1,0 +1,32 @@
+FROM node:10 as dev1
+# RUN apt-get update
+# RUN apt-get install -y zsh
+# RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+# CMD ["zsh"]
+
+
+FROM node:12.18-alpine as dev2
+WORKDIR /work/
+COPY ./package.json /work/package.json
+COPY ./.editorconfig /work/.editorconfig
+COPY ./jest.config.js /work/jest.config.js
+COPY ./tsconfig.json /work/tsconfig.json
+RUN npm install
+# RUN npm install -g nodemon
+COPY ./src/ /work/src/
+COPY ./public/ /work/public/
+COPY ./config/ /work/config/
+COPY ./test/ /work/test/
+CMD ["npm", "run", "dev"]
+# ENTRYPOINT [ "nodemon","--inspect=0.0.0.0","./src/server.js"]
+# CMD ["nodemon", "-L", "--inspect=0.0.0.0", "./src/server.js"]
+
+
+FROM node:12.18-alpine as prod
+WORKDIR /work/
+COPY ./package.json /work/package.json
+RUN npm install
+COPY ./src/ /work/src/
+CMD ["node", "./src/server.js"]
+# CMD ["npm", "run", "start"]
+# CMD node .

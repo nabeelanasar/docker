@@ -1,0 +1,24 @@
+/*
+* dropdown.css.
+*
+* @author Vineetha Vijayan
+* @version 1.0.0
+*/
+
+.dropdown {
+    margin-bottom: 16px;
+ }
+ 
+ .dropdownColor {
+     background-color: cornflowerblue;
+ }
+ 
+ .dropdownSize {
+     width: 100%;
+     text-transform: uppercase ;
+ }
+
+ .dropdownSize button {
+    width: 100%;
+    text-transform: uppercase ;
+}

@@ -1,0 +1,15 @@
+/*
+* person.module.css
+*
+* @author Anusree
+* @version 1.0.0
+*/
+
+.person {
+    width: 60%;
+    margin:16px auto;
+    border: 2px solid rgb(97, 13, 13);
+    box-shadow: 2px 2px 3px #ccc;
+    padding:16px;
+    text-align: center;
+}

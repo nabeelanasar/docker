@@ -1,0 +1,30 @@
+/*
+* CSS file
+*
+* @author Viji Prabha
+* @version 1.0.0
+*/
+
+.service {
+    margin-bottom: 10px;
+    padding: 16px 0 40px 0;
+    text-align: justify; 
+}
+
+.cardHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 25px;
+}
+
+.more{
+    text-align: right !important;
+}
+
+.breadcrumb ol { 
+    background-color: #fff !important; 
+    padding-top:20px;  
+}

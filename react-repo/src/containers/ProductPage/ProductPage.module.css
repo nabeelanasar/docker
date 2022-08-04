@@ -1,0 +1,29 @@
+/*
+* productPage.module.css
+*
+* @author VineethaVijayan
+* @version 1.0.0
+*/
+
+.productBuilder {
+     padding: 16px; 
+     color: black;
+}
+
+.rowcolor {
+    background-color: green;
+}
+
+.search {
+    margin-bottom: 2%;
+    height: 35px;
+    width: 100%;
+}
+
+.rowStyle { 
+    padding-top: 20px; 
+}
+
+.breadcrumb ol { 
+    background-color: #fff !important; 
+}

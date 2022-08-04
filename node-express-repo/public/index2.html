@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>API Endpoints</title>
+    <meta name="description" content="API Endpoints">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+        font-weight: 400;
+        font-size: 16px;
+        color: #2c3e50;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      main {
+        margin-top: 5px;
+        padding: 20px;
+      }
+
+      img.logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 2em;
+        font-weight: 100;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+      }
+
+      footer p {
+        font-weight: 300;
+        font-size: 1.0em;
+      }
+
+      a {
+        color: #3cf;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        color: #3cf;
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table, td, th {
+        border: 1px solid black;
+      }
+      
+      td,th {
+        padding: 8px;
+        height: 50px;
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+
+      <h2>API End Points</h2>
+      <br />
+      <table>
+        <thead>
+          <th>API</th>
+          <th>Version</th>
+          <th>Methods</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <th colspan="4">Blogs</th>
+        </tr>
+        <tr>
+          <td>/blogs</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive records from blogs</td>
+        </tr>
+        <tr>
+          <td>/blogs/id</td>
+          <td>1</td>
+          <td>GET, PATCH, PUT, DELETE</td>
+          <td>Retreive/Update/Delete records from blogs</td>
+        </tr>
+        <tr>
+          <td>/blogs?$select[]=author</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive one field from blogs</td>
+        </tr>
+        <tr>
+          <td>/blogs?$sort[author]=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Sort records in acending order(-1 decending order)</td>
+        </tr>
+        <tr>
+          <td>/blogs?$limit=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Limit the number of records</td>
+        </tr>
+        <tr>
+          <td>/blogs?$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Skip the number of records</td>
+        </tr>
+        <tr>
+          <td>/blogs?q=categories</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive all records from blogs_categories</td>
+        </tr>
+        <tr>
+          <td>/blogs?q=categories&$limit=10&$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get supports both limit and skip</td>
+        </tr>
+        <tr>
+          <th colspan="4">Covid</td>
+        </tr>
+        <tr>
+          <td>/covid</td>
+          <td>1</td>
+          <td>GET, POST, PATCH, PUT, DELETE</td>
+          <td>Retreive/Create/Update/Delete records from covid</td>
+        </tr>
+        <tr>
+          <td>/covid/id</td>
+          <td>1</td>
+          <td>GET, PATCH, PUT, DELETE</td>
+          <td>Retreive/Update/Delete records from covid</td>
+        </tr>
+        <tr>
+          <td>/covid?$select[]=newConfirmed</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive one field from covid</td>
+        </tr>
+        <tr>
+          <td>/covid?$sort[newConfirmed]=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Sort records in acending order(-1 decending order)</td>
+        </tr>
+        <tr>
+          <td>/covid?$limit=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Limit the number of records</td>
+        </tr>
+        <tr>
+          <td>/covid?$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Skip the number of records</td>
+        </tr>
+        <tr>
+          <td>/covid?q=countries</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive all records from covid_countries</td>
+        </tr>
+        <tr>
+          <td>/covid?q=countries&$limit=10&$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get supports both limit and skip</td>
+        </tr>
+        <th colspan="4">Projects</th>
+        <tr>
+          <td>/projects</td>
+          <td>1</td>
+          <td>GET,POST,PATCH,PUT,DELETE</td>
+          <td>Retrieve /Create/Update/Delete records from projects</td>
+        </tr>
+        <tr>
+          <td>/projects/id</td>
+          <td>1</td>
+          <td>GET, PATCH, PUT, DELETE</td>
+          <td>Retreive/Update/Delete records from projects</td>
+        </tr>
+        <tr>
+          <td>/projects?$select[]=author</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive one field from projects</td>
+        </tr>
+        <tr>
+          <td>/projects?$sort[author]=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Sort records in acending order(-1 decending order)</td>
+        </tr>
+        <tr>
+          <td>/projects?$limit=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Limit the number of records</td>
+        </tr>
+        <tr>
+          <td>/projects?$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Skip the number of records</td>
+        </tr>
+        <tr>
+          <td>/projects?q=list</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive all records from projects_list</td>
+        </tr>
+        <tr>
+          <td>/projects?q=list&$limit=10&$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get supports both limit and skip</td>
+        </tr>
+        <th colspan="4">Products</th>
+        <tr>
+          <td>/products</td>
+          <td>1</td>
+          <td>GET,POST,PATCH,PUT,DELETE</td>
+          <td>Retrieve /Create/Update/Delete records from products</td>
+        </tr>
+        <tr>
+          <td>/products/id</td>
+          <td>1</td>
+          <td>GET, PATCH, PUT, DELETE</td>
+          <td>Retreive/Update/Delete records from products</td>
+        </tr>
+        <tr>
+          <td>/products?$select[]=name</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive one field from products</td>
+        </tr>
+        <tr>
+          <td>/products?$sort[name]=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Sort records in acending order(-1 decending order)</td>
+        </tr>
+        <tr>
+          <td>/products?$limit=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Limit the number of records</td>
+        </tr>
+        <tr>
+          <td>/products?$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Skip the number of records</td>
+        </tr>
+        <tr>
+          <td>/products?q=categories</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive all records from products_categories</td>
+        </tr>
+        <tr>
+          <td>/products?q=categories&$limit=10&$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get supports both limit and skip</td>
+        </tr>
+        <th colspan="4">Services</th>
+        <tr>
+          <td>/services</td>
+          <td>1</td>
+          <td>GET,POST,PATCH,PUT,DELETE</td>
+          <td>Retrieve /Create/Update/Delete records from services</td>
+        </tr>
+        <tr>
+          <td>/services/id</td>
+          <td>1</td>
+          <td>GET, PATCH, PUT, DELETE</td>
+          <td>Retreive/Update/Delete records from services</td>
+        </tr>
+        <tr>
+          <td>/services?$select[]=name</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive one field from services</td>
+        </tr>
+        <tr>
+          <td>/services?$sort[name]=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Sort records in acending order(-1 decending order)</td>
+        </tr>
+        <tr>
+          <td>/services?$limit=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Limit the number of records</td>
+        </tr>
+        <tr>
+          <td>/services?$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Skip the number of records</td>
+        </tr>
+        <tr>
+          <td>/services?q=categories</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Retreive all records from services_categories</td>
+        </tr>
+        <tr>
+          <td>/services?q=categories&$limit=10&$skip=1</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get supports both limit and skip</td>
+        </tr>
+        <th colspan="4">User</th>
+        <tr>
+          <td>/users</td>
+          <td>1</td>
+          <td>POST</td>
+          <td>Create a user</td>
+        </tr>
+        <tr>
+          <td>/users</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get a listing of users</td>
+        </tr>
+        <tr>
+          <td>/users/:id</td>
+          <td>1</td>
+          <td>GET</td>
+          <td>Get details about a user</td>
+        </tr>
+        <tr>
+          <td>/users/:id</td>
+          <td>1</td>
+          <td>PUT </td>
+          <td>Update a user</td>
+        </tr>
+        <tr>
+          <td>/users/:id</td>
+          <td>1</td>
+          <td>DELETE </td>
+          <td>Delete a user</td>
+        </tr>
+        <tr>
+          <td colspan="4">Note:- All end points thet deals with collections support limit and skip</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>

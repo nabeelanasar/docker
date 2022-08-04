@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Docker: Attach to nodecicd",
+            "type": "node",
+            "request": "attach",
+            "remoteRoot": "/work/src/",
+            "port": 9001,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}/node-cicd-repo/src/",
+            "protocol": "inspector",
+            "restart": true
+        },
+        {
+            "name": "Docker: Attach to nodeexpress",
+            "type": "node",
+            "request": "attach",
+            "remoteRoot": "/work/src/",
+            "port": 9002,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}/node-express-repo/src/",
+            "protocol": "inspector",
+            "restart": true
+        }
+    ]
+}

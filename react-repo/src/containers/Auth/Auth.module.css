@@ -1,0 +1,20 @@
+/*
+* Auth.tsx.
+*
+* @author Viji
+* @version 1.0.0
+*/
+
+.auth {
+    margin: 20px auto;
+    width: 30%;
+    text-align: center;
+    /* box-shadow: 0 2px 3px #ccc; */
+    /* border: 1px solid #eee; */
+    padding: 10px;
+    /* box-sizing: border-box; */
+}
+
+.signup_button {
+    margin: 5px;
+}

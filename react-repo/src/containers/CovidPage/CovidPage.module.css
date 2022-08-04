@@ -1,0 +1,19 @@
+/*
+ * CovidPage.module.css
+ * 
+ * @author Vishnu
+ * @version 1.0.0
+ */
+
+.covidBuilder {
+    padding-top: 16px
+}
+
+.breadcrumb ol { 
+    background-color: #fff !important; 
+    padding:0px;  
+}
+
+.breadcrumbPaddding {
+    padding-top: 25px;
+}

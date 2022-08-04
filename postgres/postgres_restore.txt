@@ -1,0 +1,2 @@
+Postgres restore through docker command:
+docker exec nodeexpress_postgres pg_restore -U postgres -d node_express_3 /docker-entrypoint-initdb.d/setup.sql
